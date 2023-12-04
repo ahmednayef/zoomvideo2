@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Conference Room</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <body>
+    <div><img src ="{% static 'css/CR.svg'%}"width="200" height="200" style="float:center;margin:0 0 550px 550px;">></div>
+    <div class="intro">
+      
+        <h1>Hi Conference Room</h1>
+        <h2>Hold your meeting with us</h2>
+        <!-- create a signup and signin button-->
+        <a href="{% url 'login' %}" class="button">Sign In</a>
+        <a href="{% url 'register' %}" class="button">Sign Up</a>
+        <h2>Aya Mohammed</h2>
+    </div>
+  </body>
+</head>
+</html>
